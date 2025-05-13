@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #d9d9d9;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+header {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 500;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 35px;
+  color: #f9f4da;
+}
+
+header p {
+  margin-top: 0;
+  color: #8e8e8e;
+  font-size: 20px;
+}
+
+#statusBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  font-size: 28px;
+  background-color: #7a5ea7;
+  text-align: center;
+  font-style: italic;
+  width: 600px;
+  height: 110px;
+  border-radius: 4px;
+  color: #f9f4da;
+  font-weight: 400;
+  padding: 10px 50px 10px 50px;
+  margin: auto;
+}
+.languageChips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  max-width: 400px;
+  height: 50px;
+  margin: 35px auto;
+}
+.languageChips p {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.languageChips p.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  background-color: #000000b3;
+}
+
+.letters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.letters p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  background-color: #323232;
+  width: 80px;
+  height: 80px;
+  color: #f9f4da;
+  border-bottom: 3px solid #f9f4da;
+}
+
+.alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  gap: 7px;
+  max-width: 650px;
+}
+.alphabet button {
+  width: 55px;
+  height: 55px;
+  font-size: 23px;
+  border-radius: 4px;
+  background-color: #fcba29;
+  color: #1e1e1e;
+  font-weight: 600;
+  border-color: #d7d7d7;
+  cursor: pointer;
+}
+.newGame {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 15px 100px 15px 100px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border-color: #d7d7d7;
+  background-color: #11b5e5;
+  color: #1e1e1e;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+#statusBox.lost,
+#statusBox.won {
+  visibility: visible;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  margin: auto;
+  padding-top: 30px;
+}
+#statusbox h2 {
+  font-size: 25px;
+  margin: 2px;
+}
+#statusbox p {
+  font-size: 20px;
+  margin: 1px;
+}
+
+.reveal {
+  visibility: visible;
+}
